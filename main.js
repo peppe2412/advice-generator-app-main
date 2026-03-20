@@ -8,7 +8,7 @@ async function getApi() {
     setLoader(true)
     const response = await fetch("https://api.adviceslip.com/advice");
     const data = await response.json();
-    h1.textContent = `${data.slip.advice}`;
+    h1.textContent = `"${data.slip.advice}"`;
   } catch (error) {
     console.error(error);
   }finally{

@@ -1,5 +1,39 @@
+:root{
+  --primary-blue: hsl(193, 38%, 86%);
+  --primary-green: hsl(150, 100%, 66%);
+  --neutral-blue-600: hsl(217, 19%, 38%);
+  --neutral-blue-900: hsl(217, 19%, 24%);
+  --neutral-blue-950: hsl(218, 23%, 16%);
+}
+
+* {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+body{
+  background-color: var(--neutral-blue-950);
+}
+
+h1{
+  color: var(--primary-blue);
+}
+
+button{
+  background-color: var(--primary-green);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* img{
+  width: 20px;
+  padding: 5px;
+} */
+
 .loader {
-  border: 5px solid red;
+  border: 5px solid var(--primary-blue);
   border-top: 5px solid transparent;
   width: 50px;
   height: 50px;
