@@ -1,4 +1,4 @@
-:root{
+:root {
   --primary-blue: hsl(193, 38%, 86%);
   --primary-green: hsl(150, 100%, 66%);
   --neutral-blue-600: hsl(217, 19%, 38%);
@@ -11,15 +11,19 @@
   font-weight: 800;
 }
 
-body{
+body {
   background-color: var(--neutral-blue-950);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-h1{
+h1 {
   color: var(--primary-blue);
 }
 
-button{
+button {
   background-color: var(--primary-green);
   border: none;
   border-radius: 50%;
@@ -27,17 +31,61 @@ button{
   cursor: pointer;
 }
 
+main {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main-section {
+  background-color: var(--neutral-blue-900);
+  padding: 2.5rem;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.main-section-container {
+  width: 50%;
+}
+
+.header-box{
+  width: 100%;
+}
+
+.advice-id-box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  color: var(--primary-green);
+  gap: 10px;
+  font-size: small;
+}
+
+.divider{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
 /* img{
   width: 20px;
   padding: 5px;
 } */
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.488);
+  inset: 0;
+  position: fixed;
+}
+
 .loader {
-  border: 5px solid var(--primary-blue);
-  border-top: 5px solid transparent;
-  width: 50px;
-  height: 50px;
+  border: 10px solid var(--primary-blue);
+  border-top: 10px solid transparent;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  position: absolute;
+  top: 50%;
   animation: spin 2s linear infinite;
 }
 

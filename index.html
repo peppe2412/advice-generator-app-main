@@ -18,19 +18,39 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Advice generator app</title>
   </head>
   <body>
-
+    <div class="overlay"></div>
 
     <div class="loader"></div>
-    <h1 style="text-align: center;"></h1>
 
-    <button id="button-regenerate">
-      <img src="/images/icon-dice.svg" alt="icon-dice">
-    </button>
-
+    <main>
+      <section class="main-section">
+        <div style="display: flex; justify-content: center">
+          <div class="main-section-container">
+            <div class="advice-id-box">
+              ADVICE <span>#<span id="advice-id"></span></span>
+            </div>
+            <div style="display: flex; justify-content: center">
+              <div class="header-box">
+                <h1 style="text-align: center"></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider">
+          <img
+            src="/images/pattern-divider-desktop.svg"
+            alt="pattern-divider-desktop"
+          />
+        </div>
+        <button id="button-regenerate">
+          <img src="/images/icon-dice.svg" alt="icon-dice" />
+        </button>
+      </section>
+    </main>
 
     <!-- Advice #Advice ID goes here -->
 
