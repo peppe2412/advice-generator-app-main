@@ -56,7 +56,7 @@ main {
 }
 
 .main-section-container {
-  width: 50%;
+  width: 100%;
   max-width: 540px;
 }
 
@@ -79,11 +79,6 @@ main {
   display: flex;
   align-items: center;
 }
-
-/* img{
-  width: 20px;
-  padding: 5px;
-} */
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.488);
@@ -110,5 +105,27 @@ main {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px){
+  body{
+    padding: 20px;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  main{
+    padding: 0;
+  }
+
+  .main-section{
+    padding: 2.5rem 0.5rem;
+  }
+
+  .divider{
+    margin-bottom: 1.5rem;
   }
 }
