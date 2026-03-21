@@ -9,8 +9,7 @@ async function getApi() {
     setLoader(true)
     const response = await fetch("https://api.adviceslip.com/advice");
     const data = await response.json();
-    adviceId.textContent = `${data.slip.id}`
-    h1.textContent = `"${data.slip.advice}"`;
+    appendData(data)
   } catch (error) {
     console.error(error);
   }finally{
@@ -21,3 +20,8 @@ async function getApi() {
 buttonRegenerate.addEventListener("click", getApi);
 
 getApi();
+
+function appendData(data){
+  adviceId.textContent = data.slip.id
+  h1.textContent = `"${data.slip.advice}"`;
+}
